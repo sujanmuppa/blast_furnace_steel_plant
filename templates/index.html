@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blast Furnace prediction</title>
+    <style>
+        .Title {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .class_of_diagram {
+            text-align: left;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .hello {
+            overflow-y: auto; /* Enable vertical scrolling */
+            width: 50%;
+            max-height: 540px; /* Limit max height */
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .inputs {
+            max-width: 400px; /* Adjust width of form */
+        }
+    </style>
+</head>
+<body>
+    <div class="Title">
+        <h1>Blast Furnace carbon monoxide to carbon dioxide ratio (CO/CO2)</h1>
+    </div>
+    <div class="container">
+        <div class="class_of_diagram">
+            <img src="static/iron7a.gif" alt="BlastFurnace" style="max-height: 620px; width: auto;">
+        </div>
+        <div class="hello" style="margin: 30px;">
+            <form class="inputs" action="/predict" method="post">
+                    <label for="CB_FLOW">CB_FLOW:</label>
+                    <input type="text" id="CB_FLOW" name="CB_FLOW" required><br><br>
+                    
+                    <label for="CB_PRESS">CB_PRESS:</label>
+                    <input type="text" id="CB_PRESS" name="CB_PRESS" required><br><br>
+                    
+                    <label for="CB_TEMP">CB_TEMP:</label>
+                    <input type="text" id="CB_TEMP" name="CB_TEMP" required><br><br>
+                    
+                    <label for="STEAM_FLOW">STEAM_FLOW:</label>
+                    <input type="text" id="STEAM_FLOW" name="STEAM_FLOW" required><br><br>
+                    
+                    <label for="STEAM_TEMP">STEAM_TEMP:</label>
+                    <input type="text" id="STEAM_TEMP" name="STEAM_TEMP" required><br><br>
+                    
+                    <label for="STEAM_PRESS">STEAM_PRESS:</label>
+                    <input type="text" id="STEAM_PRESS" name="STEAM_PRESS" required><br><br>
+                    
+                    <label for="O2_PRESS">O2_PRESS:</label>
+                    <input type="text" id="O2_PRESS" name="O2_PRESS" required><br><br>
+                    
+                    <label for="O2_FLOW">O2_FLOW:</label>
+                    <input type="text" id="O2_FLOW" name="O2_FLOW" required><br><br>
+                    
+                    <label for="O2_PER">O2_PER:</label>
+                    <input type="text" id="O2_PER" name="O2_PER" required><br><br>
+                    
+                    <label for="PCI">PCI:</label>
+                    <input type="text" id="PCI" name="PCI" required><br><br>
+                    
+                    <label for="ATM_HUMID">ATM_HUMID:</label>
+                    <input type="text" id="ATM_HUMID" name="ATM_HUMID" required><br><br>
+                    
+                    <label for="HB_TEMP">HB_TEMP:</label>
+                    <input type="text" id="HB_TEMP" name="HB_TEMP" required><br><br>
+                    
+                    <label for="HB_PRESS">HB_PRESS:</label>
+                    <input type="text" id="HB_PRESS" name="HB_PRESS" required><br><br>
+                    
+                    <label for="TOP_PRESS">TOP_PRESS:</label>
+                    <input type="text" id="TOP_PRESS" name="TOP_PRESS" required><br><br>
+                    
+                    <label for="TOP_TEMP1">TOP_TEMP1:</label>
+                    <input type="text" id="TOP_TEMP1" name="TOP_TEMP1" required><br><br>
+                    
+                    <label for="TOP_TEMP2">TOP_TEMP2:</label>
+                    <input type="text" id="TOP_TEMP2" name="TOP_TEMP2" required><br><br>
+                    
+                    <label for="TOP_TEMP3">TOP_TEMP3:</label>
+                    <input type="text" id="TOP_TEMP3" name="TOP_TEMP3" required><br><br>
+                    
+                    <label for="TOP_TEMP4">TOP_TEMP4:</label>
+                    <input type="text" id="TOP_TEMP4" name="TOP_TEMP4" required><br><br>
+                    
+                    <label for="TOP_SPRAY">TOP_SPRAY:</label>
+                    <input type="text" id="TOP_SPRAY" name="TOP_SPRAY" required><br><br>
+                    
+                    <label for="TOP_TEMP">TOP_TEMP:</label>
+                    <input type="text" id="TOP_TEMP" name="TOP_TEMP" required><br><br>
+                    
+                    <label for="TOP_PRESS_1">TOP_PRESS_1:</label>
+                    <input type="text" id="TOP_PRESS_1" name="TOP_PRESS_1" required><br><br>
+                    
+                    <label for="H2">H2:</label>
+                    <input type="text" id="H2" name="H2" required><br><br>
+                    
+                    <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

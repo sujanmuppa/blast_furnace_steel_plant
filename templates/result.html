@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blast Furnace prediction</title>
+    <style>
+        .Title {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .class_of_diagram {
+            text-align: left;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .hello {
+            overflow-y: auto; /* Enable vertical scrolling */
+            width: 50%;
+            max-height: 540px; /* Limit max height */
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .inputs {
+            max-width: 400px; /* Adjust width of form */
+        }
+    </style>
+</head>
+<body>
+    <div class="Title">
+        <h1>Blast Furnace carbon monoxide to carbon dioxide ratio (CO/CO2)</h1>
+    </div>
+    <div class="container">
+        <div class="class_of_diagram">
+            <img src="static/iron7a.gif" alt="BlastFurnace" style="max-height: 620px; width: auto;">
+        </div>
+        <div class="hello" style="margin: 30px;">
+            <h3>NEXT 1 Hour</h3>: {{ next_1hr }} <br>
+            <h3>NEXT 2 Hour</h3>: {{ next_2hr }} <br>
+            <h3>NEXT 3 Hour</h3>: {{ next_3hr }} <br>
+            <h3>NEXT 4 Hour</h3>: {{ next_4hr }} <br>
+        </div>
+    </div>
+</body>
+</html>
